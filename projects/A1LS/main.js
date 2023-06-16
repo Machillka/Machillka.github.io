@@ -7,7 +7,7 @@ window.onload =function(){
     {
         voices = []
         for (var i = 0; i < voicelen; i++)
-            console.log(voices.push(new Audio('A1LSHigh.wav')));
+            voices.push(new Audio('A1LSHigh.wav'));
     }
 
     //获取内容区里面得#main和#go，以及获取计数区。
