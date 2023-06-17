@@ -1,7 +1,7 @@
 window.onload =function(){
     var voices = []
     var head = 0
-    var voicelen = 30
+    var voicelen = 5
 
     function InitVoice()
     {
@@ -9,7 +9,7 @@ window.onload =function(){
         for (var i = 0; i < voicelen; i++)
             voices.push(new Audio('A1LSHigh.wav'));
     }
-
+    InitVoice();
     //获取内容区里面得#main和#go，以及获取计数区。
     var main = document.getElementById('main');
     var go = document.getElementById('go');
@@ -115,7 +115,6 @@ window.onload =function(){
         }
         //清空计分
         count.innerHTML = '游戏开始';
-        InitVoice();
         //隐藏开始盒子
         this.parentNode.style.display = "none";
         move(main);
